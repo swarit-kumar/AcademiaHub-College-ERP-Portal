@@ -1,97 +1,53 @@
-# College-ERP-Portal
-A user-friendly CLI based system where students register for courses, view grades, and give feedback; professors manage courses and review feedback; and admins handle student records and course details seamlessly.
+# **College ERP System (CLI-based)**
 
-Steps to Run this program:
+Welcome to the **College ERP System**, a command-line interface (CLI) application designed to manage the daily operations of a college. This system provides distinct functionalities for **Students**, **Professors**, and **Admins**, helping them efficiently manage academic records, course registration, grades, attendance, and more.
 
-(I have taken three students and two Professors and 2 TA with (ta1 assigned course1, ta2 assigned course2) and 1 Admin to demonstrate this Assignment).
-Given in the above of the main function
+---
 
-Press any number given between 1 to 4 as given to login
-Press 1 for Login as Student
-Press 2 for Login as Professor
-Press 3 for Login as Teaching Assistant
-Press 4 for Login as Administrator
-Press 5 for Exit
+## **✨ Key Features**
 
-//STUDENT
-If you pressed 1 then you have to fill one of students email id and password given in main class.
-Example:
-Enter student email-> swarit@iiitd.com
-Enter password-> student1
-Swarit logged in successfully.
-Press 1 for View Courses
-Press 2 for Register for a Course
-Press 3 for View Schedule
-Press 4 for Track Progress
-Press 5 for Drop Course
-Press 6 for Submit Complaint
-Press 7 for giving any feedback
-Press 8 for logout
+### For **Students**:
+- 🎓 **View Academic Profile**: Check your personal details, grades, and attendance records.
+- 📚 **Register for Courses**: Register for available courses based on your program requirements.
+- 📅 **Course Management**: View detailed information about courses including schedules and instructor details.
+- 📝 **Track Performance**: Easily view your grades and track attendance for all enrolled courses.
 
-Press 1 to view courses available
-Press 2 to register from the courses given
-After this Press 3 to view the schedule of your registered courses.
-then Press 4 to get the CGPA
-Press 5 to drop course from the registered one.
-Press 6 if you have to register any complaint
-Press 7 if you want to give any feedback
-And Press 8 to Logout from student section.
+### For **Professors**:
+- 📖 **Course Management**: Manage courses you're teaching by adding/removing students, and tracking performance.
+- 📝 **Enter Grades & Attendance**: Record and update student grades and attendance for the courses you teach.
+- 📅 **Teaching Schedule**: Stay organized with your detailed teaching schedule and assignments.
 
-//PROFESSOR
-If you press 2 then you have to fill one of the professor email and password given in main class
-Example:
-Enter Professor email-> prof1@iiitd.com
-Enter password-> prof1
-Professor logged in successfully.
-Press 1 for Manage Courses
-Press 2 for View Enrolled Students
-Press 3 for Logout
+### For **Admins**:
+- 👨‍💼 **User Management**: Manage student and professor accounts. Add, remove, or update their profiles and roles.
+- 📚 **Course Management**: Create, update, or delete courses. Assign professors to relevant courses.
+- 🔎 **Records Oversight**: Have full access to student grades, attendance, and academic records to ensure smooth operations.
 
-Press 1 and then select the course index from the course catalog and update the timings
-Press 2 to see the list of enrolled students in the course (Note: First you have to register for the courses as a student).
-Press 3 to view the students feedbacks
-Press 4 to finally log out from Prof section.
+---
 
+## **🚀 Technologies Used**
 
-//Teaching Assistant
-If you press then you have to fill the TA email and password
-For Example:
-email->ta1@iiitd.com
-password->ta1
+- **Programming Language**: Java
+- **Storage**: Simple file-based or in-memory database for storing user and academic data.
+- **CLI Framework**: Built with Java's native libraries (Scanner, System.out) for a straightforward and efficient command-line experience.
 
-After this:
-Press 1 to view the enrolled students grades
-Press 2 to update the student grades in that course
-Press 3 to finally logout
+---
 
+## **📁 Project Structure**
 
-//ADMIN
-If you press 4 then you have to fill the admin email and password given below
-email->admin@iiitd.com
-password-> admin12345
+The project is built using Object-Oriented Principles (OOP) to ensure scalability and maintainability. Key components include:
 
-After this:
-Administrator logged in successfully.
-Press 1 for Manage Courses
-Press 2 for Manage Student Records
-Press 3 for Logout
+- **Main Class**: Entry point of the system that initializes the core operations and provides the user menu interface.
+- **User Class**: A common base class for students, professors, and admins with shared properties such as user ID, name, and login credentials.
+- **Student Class**: Extends `User` to allow students to register for courses, view grades, and attendance.
+- **Professor Class**: Extends `User` to allow professors to manage courses and enter grades/attendance.
+- **Admin Class**: Extends `User` and provides access to full administrative controls, such as user and course management.
+- **Course Class**: Stores course-specific details like the course name, schedule, professor, and student enrollment.
+- **Portal/Database Class**: Manages the system's data storage, including users, courses, grades, and attendance records.
 
+---
 
-Press 1 to manage course like view all the courses or Add a new course to the catalog or Delete a course fromt the given catalog.
-Press 2 to Manage student data like viewing their email and password ot updting the student grades or Updating the student email (Note:- If you update the student email then you have to login through the updated email.).
-Finally Press 3 to log out from admin section.
+## **⚙️ How to Run the Project**
 
-
-#CONCEPTS I USED:-
-I used the inheritance like TeachingAssistant class inherits from the student class.
-I used the Encapsulation like in student class the name is private and password and email is protected and so on.
-I defined the Constructors like in student class and Professor class etc.
-I used the Access Modifiers
-I used the getters and Setters like getName(), setName(name) etc.
-I used the data Structure like ArrayList and HashMaps
-I used String operations like equals() in the authenticate() methods
-I used different methods
-Fields like name are private and immutable without a setter, whereas fields like email have setters and are mutable.
-I used the Generic programming to make the feedback class.
-I use the Robust Exceptional handling for InvalidLoginException and for CourseFullException.
-
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/yourusername/college-erp-system.git

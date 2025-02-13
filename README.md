@@ -1,4 +1,4 @@
-# **College ERP System (CLI-based)**
+# **Academia Hub (CLI-based College ERP System)**
 
 Welcome to the **College ERP System**, a command-line interface (CLI) application designed to manage the daily operations of a college. This system provides distinct functionalities for **Students**, **Professors**, and **Admins**, helping them efficiently manage academic records, course registration, grades, attendance, and more.
 

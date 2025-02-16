@@ -50,7 +50,7 @@ public class Main {
         
         boolean running = true;
         while (running) {
-            System.out.println("<<Welcome to the iiitd Portal>>");
+            System.out.println("<<Welcome to the AcademiaHub (An ERP Portal)>>");
             System.out.println("Press 1 for Login as Student");
             System.out.println("Press 2 for Login as Professor");
             System.out.println("Press 3 for Login as TA");

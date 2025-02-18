@@ -4,6 +4,12 @@ Welcome to the **College ERP System**, a command-line interface (CLI) applicatio
 
 ---
 
+
+https://github.com/user-attachments/assets/e22e7e7f-7ad2-4388-8c86-c62eaf859791
+
+
+---
+
 ## **✨ Key Features**
 
 ### For **Students**:
